@@ -1,0 +1,7 @@
+console.log("Portfolio Loaded");
+
+document.addEventListener("DOMContentLoaded", function(){
+
+alert("Welcome To My Cyber Security Portfolio");
+
+});
