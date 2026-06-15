@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 console.log("Portfolio Loaded");
 
 document.addEventListener("DOMContentLoaded", function(){
 
 alert("Welcome To My Cyber Security Portfolio");
 
+=======
+console.log("Portfolio Loaded");
+
+document.addEventListener("DOMContentLoaded", function(){
+
+alert("Welcome To My Cyber Security Portfolio");
+
+>>>>>>> c577e674cdae686e50e0c978176af567087f098e
 });
