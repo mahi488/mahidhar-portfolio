@@ -3,235 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahidhar Reddy Portfolio</title>
-
+    <title>Chinthala Mahidhar Reddy | Cyber Security Portfolio</title>
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="navbar">
+    <!-- Sticky Glassmorphic Navbar -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Mahidhar Reddy</a>
-
-            <ul class="nav-links">
+            <a href="#" class="logo">
+                <span>M.</span>Reddy<span>{sec}</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-container">
-
-            <div class="hero-img-container">
-                <img src="profile.jpg" alt="Profile" class="profile-img">
-            </div>
-
             <div class="hero-text">
-                <h1>
-                    Chinthala
-                    <span class="highlight">Mahidhar Reddy</span>
-                </h1>
-
+                <span class="highlight-green font-mono text-glow" style="font-family: var(--font-mono); font-size: 0.95rem; font-weight: 500; display: block; margin-bottom: 10px;">> hello_world.py</span>
+                <h1>Chinthala<br><span class="highlight-cyan">Mahidhar Reddy</span></h1>
                 <h2>
-                    I am a
-                    <span class="typewriter">
-                        Cyber Security Student
-                    </span>
+                    I am a 
+                    <span class="typewriter-container" id="typewriter">Cyber Security Student</span>
                 </h2>
-
                 <p>
-                    Passionate about Cyber Security,
-                    Ethical Hacking,
-                    Python Development,
-                    Digital Forensics,
-                    and Secure Application Development.
+                    Final Year Computer Science Engineering student specializing in Cyber Security. Passionate about Ethical Hacking, Network Security, Python Development, and Digital Forensics.
                 </p>
-
-                <a href="resume.pdf"
-                   target="_blank"
-                   class="btn">
-                    Download Resume
-                </a>
-
+                <div class="hero-buttons">
+                    <a href="resume.pdf" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
             </div>
 
+            <div class="hero-visual">
+                <div class="profile-img-container">
+                    <img src="profile.jpg" alt="Chinthala Mahidhar Reddy" class="profile-img">
+                    <div class="profile-img-glow"></div>
+                </div>
+
+                <!-- Bash Terminal Mockup -->
+                <div class="terminal-mockup">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn btn-red"></span>
+                            <span class="terminal-btn btn-yellow"></span>
+                            <span class="terminal-btn btn-green"></span>
+                        </div>
+                        <div class="terminal-title">bash</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">mahidhar@srm-sec:~$</span> <span class="terminal-command">cat info.json</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-output">{</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-output">&nbsp;&nbsp;"location": "Chennai, India",</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-output">&nbsp;&nbsp;"education": "SRM University",</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-output">&nbsp;&nbsp;"specialization": "Cyber Security",</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-output">&nbsp;&nbsp;"skills": ["Python", "Ethical Hacking", "DSA"]</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-output">}</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">mahidhar@srm-sec:~$</span> <span class="terminal-command">_</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">> profile_overview</span>
+                <h2 class="section-title">About Me</h2>
+                <hr class="separator">
+            </div>
 
-            <h2>About Me</h2>
-            <hr class="separator">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a detail-oriented Computer Science Engineering student with a strong interest in software development, programming, and network security. Skilled in languages like Python and Java, with knowledge of web technologies and database management systems.
+                    </p>
+                    <p>
+                        Currently in my final year, I enjoy solving algorithmic security challenges, writing automated Python scripts for pen-testing, and studying digital forensics protocols. I aim to build secure, robust applications that address real-world privacy and safety challenges.
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Name</span>
+                            <span class="detail-value">Chinthala Mahidhar Reddy</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value" style="font-size: 0.85rem; word-break: break-all;">chinthalamahidharreddy@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Phone</span>
+                            <span class="detail-value">+91 9030830829</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">Chennai, India</span>
+                        </div>
+                    </div>
+                </div>
 
-            <p>
-                I am a Final Year Computer Science Engineering student
-                at SRM Institute of Science and Technology,
-                specializing in Cyber Security.
+                <div class="about-visual-stats">
+                    <div class="stat-box">
+                        <div class="stat-header">
+                            <span class="stat-title">SRM Institute of Science & Technology</span>
+                            <span class="stat-subtitle">B.Tech CSE</span>
+                        </div>
+                        <div class="stat-body">
+                            Specializing in Cyber Security. May 2026 - Present (Final Year). Chennai, India. CGPA: 7.36 / 10.0
+                        </div>
+                    </div>
 
-                I enjoy solving security challenges,
-                developing secure software solutions,
-                and learning advanced ethical hacking
-                and penetration testing techniques.
-            </p>
-
+                    <div class="stat-box alt">
+                        <div class="stat-header">
+                            <span class="stat-title">Professional Focus</span>
+                            <span class="stat-subtitle">Interests</span>
+                        </div>
+                        <div class="stat-body">
+                            Ethical Hacking, Penetration Testing, Secure Software Engineering, Network Analysis, Object Oriented Design.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">> track_record</span>
+                <h2 class="section-title">Experience</h2>
+                <hr class="separator">
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Python Developer Intern</h3>
+                                <span class="timeline-company">NeoSkillz</span>
+                            </div>
+                            <span class="timeline-date">Summer 2026</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Completed a Python Developer internship focused on Python programming and real-world application development.</li>
+                                <li>Worked on developing and testing software solutions using Python, gaining hands-on experience in coding, debugging, and project implementation.</li>
+                                <li>Improved technical, analytical, and problem-solving skills while collaborating on practical development tasks and learning modern software development practices.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
-
-            <h2>My Skills</h2>
-            <hr class="separator">
+            <div class="section-header">
+                <span class="section-subtitle">> arsenals</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <hr class="separator">
+            </div>
 
             <div class="skills-grid">
-
                 <div class="skill-card">
                     <i class="fab fa-python"></i>
                     <h3>Python</h3>
+                    <p>Scripting & Development</p>
                 </div>
-
                 <div class="skill-card">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Cyber Security</h3>
+                    <p>Securing Systems</p>
                 </div>
-
                 <div class="skill-card">
                     <i class="fas fa-user-secret"></i>
                     <h3>Ethical Hacking</h3>
+                    <p>Penetration Testing</p>
                 </div>
-
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>DSA</h3>
+                    <p>Problem Solving (Python/Java)</p>
+                </div>
                 <div class="skill-card">
                     <i class="fab fa-linux"></i>
                     <h3>Linux</h3>
+                    <p>Command Line & OS</p>
                 </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>Networking</h3>
-                </div>
-
                 <div class="skill-card">
                     <i class="fab fa-github"></i>
                     <h3>Git & GitHub</h3>
+                    <p>Version Control</p>
                 </div>
-
+                <div class="skill-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Networking</h3>
+                    <p>Network & Protocols</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <p>OOPs Principles</p>
+                </div>
             </div>
-
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
-
-            <h2>Projects</h2>
-            <hr class="separator">
+            <div class="section-header">
+                <span class="section-subtitle">> completed_builds</span>
+                <h2 class="section-title">Projects</h2>
+                <hr class="separator">
+            </div>
 
             <div class="projects-grid">
-
+                <!-- Project 1 -->
                 <div class="project-card">
-                    <h3>Custom Vulnerability Scanner</h3>
-
-                    <p>
-                        A custom Python-based tool designed to scan and
-                        check for common network and web application
-                        vulnerabilities automatically.
-                    </p>
-
-                    <a href="https://github.com/mahi488"
-                       target="_blank"
-                       class="project-link">
-                        View on GitHub
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="project-header">
+                        <i class="far fa-folder-open project-folder"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/mahi488" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure Data Hiding in Images using Steganography</h3>
+                        <p>Developed a secure image steganography application using Python and OpenCV. Enables encrypted data hiding in image pixels for stealth transmission.</p>
+                        <ul class="project-tags">
+                            <li>Python</li>
+                            <li>OpenCV</li>
+                            <li>Steganography</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- Project 2 -->
                 <div class="project-card">
-                    <h3>Malicious URL Detector</h3>
-
-                    <p>
-                        A machine learning project built with Python
-                        utilizing Kaggle datasets to classify and identify
-                        malicious web links accurately.
-                    </p>
-
-                    <a href="https://github.com/mahi488"
-                       target="_blank"
-                       class="project-link">
-                        View on GitHub
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="project-header">
+                        <i class="far fa-folder-open project-folder"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/mahi488" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Screenshot Data Leakage Prevention System</h3>
+                        <p>Developed a custom Python application designed to restrict and intercept screen captures of sensitive windows, preventing unauthorized data leakage from screenshots.</p>
+                        <ul class="project-tags">
+                            <li>Python</li>
+                            <li>DLP</li>
+                            <li>Security Agent</li>
+                            <li>Data Hiding</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- Project 3 -->
                 <div class="project-card">
-                    <h3>Sales Forecasting Model</h3>
-
-                    <p>
-                        An implementation of predictive models using
-                        ARIMA and RandomForestRegressor to forecast
-                        e-commerce sales trends.
-                    </p>
-
-                    <a href="https://github.com/mahi488"
-                       target="_blank"
-                       class="project-link">
-                        View on GitHub
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="project-header">
+                        <i class="far fa-folder-open project-folder"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/mahi488" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bus Reservation System</h3>
+                        <p>Built a robust database application using Python and MySQL to automate bus scheduling, passenger registration, seat booking, ticket issuance, and ticket cancellations.</p>
+                        <ul class="project-tags">
+                            <li>Python</li>
+                            <li>MySQL</li>
+                            <li>OOPs</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="far fa-folder-open project-folder"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/mahi488" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Loan Prediction System</h3>
+                        <p>Implemented a machine learning-based classification system using Python and RandomForest model to predict loan approvals based on credit history and demographic indicators.</p>
+                        <ul class="project-tags">
+                            <li>Python</li>
+                            <li>Machine Learning</li>
+                            <li>Data Analysis</li>
+                            <li>Scikit-Learn</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">> milestones</span>
+                <h2 class="section-title">Achievements</h2>
+                <hr class="separator">
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>TryHackMe</h3>
+                    <p>Completed the Pre-Security learning path, developing core skills in network security, web application security, and Linux basics.</p>
+                    <a href="https://tryhackme.com" target="_blank" class="achievement-link">
+                        Verify Badge <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="achievement-card alt">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <p>Regularly solving programming challenges in Python and Java focusing on Data Structures, Algorithms, and Problem Solving.</p>
+                    <a href="https://leetcode.com/u/X4B3oGfcIE/" target="_blank" class="achievement-link">
+                        View Profile <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-
-            <h2>Contact Me</h2>
-            <hr class="separator">
-
-            <p>
-                Feel free to reach out for collaborations
-                or opportunities!
-            </p>
-
-            <div class="contact-links">
-
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chinthalamahidharreddy@gmail.com"
-                   target="_blank"
-                   class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                    Email
-                </a>
-
-                <a href="https://github.com/mahi488"
-                   target="_blank"
-                   class="contact-icon">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
-
+            <div class="section-header">
+                <span class="section-subtitle">> ping_request</span>
+                <h2 class="section-title">Contact Me</h2>
+                <hr class="separator">
             </div>
 
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h3>Let's Collaborate</h3>
+                    <p>Have an interesting project, internship opportunity, or want to discuss security solutions? Feel free to reach out to me via any of the communication channels listed here.</p>
+                    
+                    <div class="contact-channels">
+                        <a href="mailto:chinthalamahidharreddy@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>chinthalamahidharreddy@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/mahi488" target="_blank" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/mahi488</span>
+                        </a>
+                        <a href="tel:+919030830829" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9030830829</span>
+                        </a>
+                        <a href="https://leetcode.com/u/X4B3oGfcIE/" target="_blank" class="contact-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>leetcode.com/u/X4B3oGfcIE</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="yourname@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            Send Message <i class="fas fa-paper-plane" style="margin-left: 5px;"></i>
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>
-            &copy; 2026 Chinthala Mahidhar Reddy.
-            All Rights Reserved.
-        </p>
+        <div class="footer-logo">
+            <span>M.</span>Reddy<span>{sec}</span>
+        </div>
+        <p>&copy; 2026 Chinthala Mahidhar Reddy. All rights reserved.</p>
+        <p style="margin-top: 5px; font-size: 0.8rem; color: var(--text-dark);">Cyber Security Student | Python Developer</p>
     </footer>
 
+    <!-- Script file -->
     <script src="script.js"></script>
-
 </body>
 </html>
